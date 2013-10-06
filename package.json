@@ -1,0 +1,40 @@
+{
+  "name": "es6-module-packager",
+  "version": "0.0.0",
+  "description": "A javascript text diff implementation.",
+  "keywords": [
+    "es6",
+    "javascript",
+    "build",
+    "package"
+  ],
+  "maintainers": [
+    "Kevin Decker <kpdecker@gmail.com> (http://incaseofstairs.com)"
+  ],
+  "bugs": {
+    "email": "kpdecker@gmail.com",
+    "url": "http://github.com/kpdecker/es6-module-packager/issues"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "http://github.com/kpdecker/es6-module-packager/blob/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kpdecker/es6-module-packager.git"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "optimist": "~0.6.0",
+    "underscore": "~1.5.2"
+  },
+  "devDependencies": {
+    "es6ify": "~0.4.3",
+    "grunt": "~0.4.1"
+  },
+  "optionalDependencies": {}
+}
