@@ -1,0 +1,1 @@
+import RSVP from 'rsvp';
