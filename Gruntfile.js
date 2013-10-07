@@ -54,6 +54,8 @@ module.exports = function(grunt) {
   // Load local tasks.
   grunt.task.loadTasks('./tasks');
 
+  // Note not exposing a build + test endpoint as there are conflicts with
+  // transpile + es6ify (waiting for https://github.com/google/traceur-compiler/pull/323)
   grunt.registerTask('test', ['simplemocha']);
 
   grunt.registerTask('default', ['test']);
