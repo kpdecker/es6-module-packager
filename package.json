@@ -41,6 +41,10 @@
     "sinon": "~1.7.3"
   },
   "optionalDependencies": {},
+
+  "bin": {
+    "es6-module-packager": "./bin/es6-module-packager"
+  },
   "scripts": {
     "prepublish": "npm test",
     "test": "grunt transpile && grunt es6ify && grunt test"

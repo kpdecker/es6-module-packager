@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+var fs = require('fs'),
+    optimist = require('optimist'),
+    Packager = require('../dist/lib/packager').default;
+
+var argv = optimist
+    .usage('Usage: $0 [-e exportVar] inputFile outputFile')
+    .options('e', {
+      alias: 'export'
+    })
+    .demand(2)
+    .argv;
+
+var map = new Packager(argv._[0], {
+  'export': argv.e
+});
+fs.writeFileSync(argv._[1], map.toLocals());
