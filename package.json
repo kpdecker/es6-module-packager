@@ -1,7 +1,7 @@
 {
   "name": "es6-module-packager",
   "version": "0.0.0",
-  "description": "A javascript text diff implementation.",
+  "description": "ES6 module linking tool.",
   "keywords": [
     "es6",
     "javascript",
