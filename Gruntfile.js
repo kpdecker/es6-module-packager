@@ -5,26 +5,6 @@ module.exports = function(grunt) {
     clean: [
       'dist'
     ],
-    transpile: {
-      app: {
-        type: 'cjs',
-        files: [{
-          expand: true,
-          src: ['bin/es6-module-packager', 'lib/**/*.js'],
-          dest: 'tmp/transpiled/'
-        }]
-      }
-    },
-    es6ify: {
-      app: {
-        files: [{
-          expand: true,
-          cwd: 'tmp/transpiled/',
-          src: ['bin/es6-module-packager', 'lib/**/*.js'],
-          dest: 'dist/'
-        }]
-      }
-    },
     jshint: {
       all: {
         src: [
@@ -35,6 +15,26 @@ module.exports = function(grunt) {
       options: {
         jshintrc: '.jshintrc',
         force: true
+      }
+    },
+    transpile: {
+      app: {
+        type: 'cjs',
+        files: [{
+          expand: true,
+          src: ['lib/**/*.js'],
+          dest: 'tmp/transpiled/'
+        }]
+      }
+    },
+    es6ify: {
+      app: {
+        files: [{
+          expand: true,
+          cwd: 'tmp/transpiled/',
+          src: ['lib/**/*.js'],
+          dest: 'dist/'
+        }]
       }
     },
     simplemocha: {
