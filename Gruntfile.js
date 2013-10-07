@@ -36,11 +36,25 @@ module.exports = function(grunt) {
         jshintrc: '.jshintrc',
         force: true
       }
+    },
+    simplemocha: {
+      options: {
+        globals: ['should'],
+        timeout: 3000,
+        ignoreLeaks: false
+      },
+
+      all: { src: ['test/*.js'] }
     }
   });
 
   grunt.loadNpmTasks('grunt-es6-module-transpiler');
+  grunt.loadNpmTasks('grunt-simple-mocha');
 
   // Load local tasks.
   grunt.task.loadTasks('./tasks');
+
+  grunt.registerTask('test', ['simplemocha']);
+
+  grunt.registerTask('default', ['test']);
 };
