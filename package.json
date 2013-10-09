@@ -1,6 +1,6 @@
 {
   "name": "es6-module-packager",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "ES6 module linking tool.",
   "keywords": [
     "es6",
