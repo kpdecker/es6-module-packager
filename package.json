@@ -37,18 +37,18 @@
     "es6ify": "~0.4.3",
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
+    "grunt-es6-module-transpiler": "joefiorini/grunt-es6-module-transpiler#latest-transpiler",
     "grunt-simple-mocha": "~0.4.0",
     "should": "~1.3.0",
     "sinon": "~1.7.3"
   },
   "optionalDependencies": {},
-
   "main": "./dist/lib/packager.js",
   "bin": {
     "es6-module-packager": "./bin/es6-module-packager"
   },
   "scripts": {
     "prepublish": "npm test",
-    "test": "grunt transpile && grunt es6ify && grunt test"
+    "test": "grunt --stack transpile && grunt --stack es6ify && grunt --stack test"
   }
 }
