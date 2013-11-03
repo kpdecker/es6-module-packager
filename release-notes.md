@@ -2,7 +2,15 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.0.2...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.0.3...master)
+
+## v0.0.3 - November 3rd, 2013
+
+- [#1](https://github.com/kpdecker/es6-module-packager/issues/1) - No compatible version found, error during npm install ([@jeffbski](https://api.github.com/users/jeffbski))
+
+- Remove tmp from package - 311222e
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.0.2...v0.0.3)
 
 ## v0.0.2 - October 9th, 2013
 
