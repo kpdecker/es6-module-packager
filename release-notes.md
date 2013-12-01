@@ -2,7 +2,13 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.0.3...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.1.0...master)
+
+## v0.1.0 - December 1st, 2013
+
+- Add grunt task with transpiler proxy - 814cf1a
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.0.3...v0.1.0)
 
 ## v0.0.3 - November 3rd, 2013
 
