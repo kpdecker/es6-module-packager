@@ -53,7 +53,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-simple-mocha');
 
   // Load local tasks.
-  grunt.task.loadTasks('./tasks');
+  grunt.task.loadTasks('./internal-tasks');
 
   // Note not exposing a build + test endpoint as there are conflicts with
   // transpile + es6ify (waiting for https://github.com/google/traceur-compiler/pull/323)
