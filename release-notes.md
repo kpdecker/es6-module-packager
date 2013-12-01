@@ -2,7 +2,14 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.1.0...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.1.1...master)
+
+## v0.1.1 - December 1st, 2013
+
+- Lock transpiler version to 0.3.3 - f0725b2
+- Use packager task for our own compilation - 58ac510
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.1.0...v0.1.1)
 
 ## v0.1.0 - December 1st, 2013
 
