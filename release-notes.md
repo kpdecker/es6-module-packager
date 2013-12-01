@@ -2,7 +2,13 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.1.1...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.1.2...master)
+
+## v0.1.2 - December 1st, 2013
+
+- Include tasks in npm package - cb88779
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.1.1...v0.1.2)
 
 ## v0.1.1 - December 1st, 2013
 
