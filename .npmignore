@@ -2,6 +2,5 @@
 .travis.yml
 Gruntfile.js
 test/
-tasks/
 lib/
 tmp/
