@@ -29,7 +29,7 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "es6-module-transpiler": "~0.3.0",
+    "es6-module-transpiler": "0.3.3",
     "optimist": "~0.6.0",
     "underscore": "~1.5.2"
   },
