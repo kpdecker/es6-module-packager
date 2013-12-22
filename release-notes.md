@@ -2,7 +2,12 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.1.2...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.2.0...master)
+
+## v0.2.0 - December 22nd, 2013
+- [#2](https://github.com/kpdecker/es6-module-packager/pull/2) - Fix anonymous AMD builds. ([@rjackson](https://api.github.com/users/rjackson))
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.1.2...v0.2.0)
 
 ## v0.1.2 - December 1st, 2013
 
