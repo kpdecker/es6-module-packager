@@ -2,7 +2,13 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.2.0...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.3.0...master)
+
+## v0.3.0 - December 26th, 2013
+- Pull anonymous flag from data or options - 06cc90c
+- Add exported flag to output - afbc44b
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.2.0...v0.3.0)
 
 ## v0.2.0 - December 22nd, 2013
 - [#2](https://github.com/kpdecker/es6-module-packager/pull/2) - Fix anonymous AMD builds. ([@rjackson](https://api.github.com/users/rjackson))
