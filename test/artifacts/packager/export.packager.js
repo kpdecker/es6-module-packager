@@ -1,3 +1,4 @@
+/* exported Global */
 var Global = (function() {
 // nested/foo.js
 var __module1__ = (function() {
