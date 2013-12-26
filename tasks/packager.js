@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         var packager = new Packager(file.src[0], {export: options.export || data.export});
         output = packager.toLocals();
       } else {
-        var moduleName = options.anonymous ? null : file.src[0],
+        var moduleName = (options.anonymous || data.anonymous) ? null : file.src[0],
             compiler = new Compiler(grunt.file.read(file.src[0]), moduleName, options);
         if (type === 'cjs') {
           output = compiler.toCJS();
