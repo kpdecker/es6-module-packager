@@ -1,5 +1,5 @@
 /* exported Global */
-var Global = (function() {
+this.Global = (function() {
 // nested/foo.js
 var __module1__ = (function() {
   "use strict";
