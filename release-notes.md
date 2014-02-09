@@ -2,7 +2,12 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.3.0...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v1.0.0...master)
+
+## v1.0.0 - February 9th, 2014
+- Use this.name export rather than var name - 626c698
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v0.3.0...v1.0.0)
 
 ## v0.3.0 - December 26th, 2013
 - Pull anonymous flag from data or options - 06cc90c
