@@ -94,5 +94,10 @@ describe('packager', function() {
       var packager = new Packager(__dirname + '/artifacts/packager/export.es6.js', {'export': 'Global'});
       packager.toLocals().should.equal(fs.readFileSync(__dirname + '/artifacts/packager/export.packager.js').toString());
     });
+    it('should error with useful information', function() {
+      (function() {
+        new Packager(__dirname + '/artifacts/packager/error.es6.js');
+      }).should.throw(/Unable to lookup "\.\/404\/foo" from ".*\/error\.es6\.js"/);
+    });
   });
 });
