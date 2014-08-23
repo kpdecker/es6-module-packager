@@ -2,7 +2,13 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v1.0.0...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v1.0.1...master)
+
+## v1.0.1 - August 23rd, 2014
+- Provide better error handling for missing imports - eb414c5
+- Do not overwrite existing vars on export - 9039ac8
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v1.0.0...v1.0.1)
 
 ## v1.0.0 - February 9th, 2014
 - Use this.name export rather than var name - 626c698
