@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         output = packager.toLocals();
       } else {
         var moduleName = (options.anonymous || data.anonymous) ? null : file.src[0],
-            compiler = new Compiler(grunt.file.read(file.src[0]), moduleName, options);
+            src = grunt.file.read(file.src[0]),
+            compiler = new Compiler(src, moduleName, options);
         if (type === 'cjs') {
           output = compiler.toCJS();
         } else if (type === 'amd') {

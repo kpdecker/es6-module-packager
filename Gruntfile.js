@@ -3,7 +3,8 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     clean: [
-      'dist'
+      'dist',
+      'tmp'
     ],
     jshint: {
       all: {
@@ -45,19 +46,26 @@ module.exports = function(grunt) {
       },
 
       all: { src: ['test/*.js'] }
+    },
+
+    // Must fork to complete the build as there are conflicts with
+    // transpile + es6ify (waiting for https://github.com/google/traceur-compiler/pull/323)
+    exec: {
+      packager: 'grunt packager',
+      es6ify: 'grunt es6ify'
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-simple-mocha');
 
   // Load local tasks.
   grunt.task.loadTasks('./internal-tasks');
   grunt.task.loadTasks('./tasks');
 
-  // Note not exposing a build + test endpoint as there are conflicts with
-  // transpile + es6ify (waiting for https://github.com/google/traceur-compiler/pull/323)
+  grunt.registerTask('build', ['exec:packager', 'exec:es6ify']);
   grunt.registerTask('test', ['simplemocha']);
 
-  grunt.registerTask('default', ['packager', 'test']);
+  grunt.registerTask('default', ['build', 'test']);
 };
