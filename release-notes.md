@@ -2,7 +2,12 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v1.0.1...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v1.1.0...master)
+
+## v1.1.0 - August 25th, 2014
+- Add UMD module output support - 145f483
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v1.0.1...v1.1.0)
 
 ## v1.0.1 - August 23rd, 2014
 - Provide better error handling for missing imports - eb414c5
