@@ -2,8 +2,7 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('packager', 'Transpiles scripts written using ES6 to ES5.', function() {
     // Execute in here to prevent traceur private var blowup
     var Compiler = require('es6-module-transpiler').Compiler,
-        Packager,
-        fs = require('fs');
+        Packager;
 
     var data = this.data,
         options = this.options(),
@@ -12,12 +11,12 @@ module.exports = function(grunt) {
     this.files.forEach(function(file) {
       var output;
 
-      if (type === 'global') {
+      if (type === 'global' || type === 'umd') {
         // Deferred loading so we can use this task for our own compilation
         Packager = Packager || require('../dist/lib/packager').default;
 
         var packager = new Packager(file.src[0], {export: options.export || data.export});
-        output = packager.toLocals();
+        output = type === 'umd' ? packager.toUMD() : packager.toLocals();
       } else {
         var moduleName = (options.anonymous || data.anonymous) ? null : file.src[0],
             src = grunt.file.read(file.src[0]),
