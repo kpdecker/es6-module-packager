@@ -5,7 +5,7 @@
   } else if (typeof exports === 'object') {
     module.exports = factory();
   } else {
-    root.Global = root.Global || factory();
+    root.Global = factory();
   }
 }(this, function () {
 // nested/foo.js
