@@ -2,7 +2,16 @@
 
 ## Development
 
-[Commits](https://github.com/kpdecker/es6-module-packager/compare/v1.1.0...master)
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v2.0.0...master)
+
+## v2.0.0 - November 26th, 2014
+- Remove existing object check from global UMD - 7a37589
+- Revert "Do not overwrite existing vars on export" - d069f06
+
+Compatibility notes:
+- Existing object failover has been removed. Libraries wishing to implement this, must do so manually.
+
+[Commits](https://github.com/kpdecker/es6-module-packager/compare/v1.1.0...v2.0.0)
 
 ## v1.1.0 - August 25th, 2014
 - Add UMD module output support - 145f483
